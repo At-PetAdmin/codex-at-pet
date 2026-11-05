@@ -1,0 +1,12 @@
+{
+  "name": "at-pet-local",
+  "interface": { "displayName": "At-Pet 本地插件" },
+  "plugins": [
+    {
+      "name": "codex-at-pet",
+      "source": { "source": "local", "path": "./" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "codex-at-pet",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Codex lifecycle hooks for the At-Pet Windows desktop companion",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/At-PetAdmin/codex-at-pet.git"
+  },
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test",
+    "check": "node scripts/validate.mjs",
+    "doctor": "node scripts/cli.mjs doctor",
+    "demo": "node scripts/cli.mjs demo",
+    "pack": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/pack.ps1"
+  },
+  "license": "MIT"
+}

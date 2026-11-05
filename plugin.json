@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "codex-at-pet",
+  "version": "0.1.0",
+  "description": "把 Codex 的思考、工具、完成、取消、子代理和权限请求接入本机 At-Pet 桌宠。",
+  "license": "MIT",
+  "repository": "https://github.com/At-PetAdmin/codex-at-pet",
+  "keywords": ["codex", "at-pet", "desktop-pet", "hooks"],
+  "extensions": {
+    "com.openai": {
+      "hooks": "./hooks/hooks.json",
+      "interface": {
+        "displayName": "At-Pet for Codex",
+        "shortDescription": "让桌宠同步 Codex 工作状态",
+        "longDescription": "通过本机 HTTP API 同步任务、工具和子代理状态，并在 At-Pet 上处理单次权限请求。需要本机 Node.js 和运行中的 At-Pet。",
+        "category": "Productivity"
+      }
+    }
+  }
+}

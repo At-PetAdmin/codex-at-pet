@@ -1,0 +1,7 @@
+{
+  "name": "codex-at-pet",
+  "version": "0.1.0",
+  "description": "Connect Codex lifecycle and permission hooks to the local At-Pet desktop companion.",
+  "license": "MIT",
+  "hooks": "./hooks/hooks.json"
+}
